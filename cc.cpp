@@ -1,17 +1,36 @@
 #include<iostream>
-#include<string.h>
-#include<vector>
-#include<algorithm>
-using namespace std;
-
-
-    
+using namespace std; 
 int main(){
-    vector<int> v={5,9,8,6,47,3};
-    int key2;
-    cout<<"enter the vlaue,that u want to find first element greater or equal to the entered value in the array"<<endl;
-    cin>>key2;
-    auto it1 =lower_bound(v.begin(),v.end(),key2);
-    cout<<"element in array which is greater or equal to the entered value"<<endl;
-    cout<<*it1<<endl;
+    int a;
+    cin>>a;
+    while (a--)
+    {
+        int n;
+    cin>>n;
+    if (n<6)
+    {
+        /* code */
+        cout<<0<<endl;
+
+    }
+    else if (n>=6)
+    {
+        /* code */
+        int week=n/7;
+        int days=n%7;
+        if (days==0 || days<6)
+        {
+            /* code */
+            cout<<week<<endl;
+        }
+        else if (days==6)
+        {
+            /* code */
+            cout<<week+1<<endl;
+
+        }
+        
+        
+    }
+    }
 }
