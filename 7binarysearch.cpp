@@ -13,7 +13,7 @@ using namespace std;
   int binary_search(int a[],int n,int key){
         int start=0;
         int end=n-1;
-        int mid=(start+end)/2;
+       int mid=start+(end-start)/2;
         while (start<=end)
         {
             if (a[mid]==key)
@@ -27,7 +27,7 @@ using namespace std;
             else{
                 start=mid+1;
             }
-            mid=(start+mid)/2;
+            mid=start+(end-start)/2;
 
         }       
         return -1;

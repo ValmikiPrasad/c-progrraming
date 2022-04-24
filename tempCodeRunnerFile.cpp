@@ -1,16 +1,12 @@
-#include<iostream>
-using namespace std;
-int main(){
-    int n;
-    cin>>n;
+int counting(int a[],int size){
     int count=0;
-    while (n!=0)
+    for (int i = 0; i < size; i+=2)
     {
-        /* code */
-        if(n&1){
-            count++;
+      
+        if ((i+1)<size && (a[i]>a[i+1]))
+        {
+            count+=1;
         }
-        n=n>>1;
-    }
-    cout<<count;
+    }   
+    return count;
 }
